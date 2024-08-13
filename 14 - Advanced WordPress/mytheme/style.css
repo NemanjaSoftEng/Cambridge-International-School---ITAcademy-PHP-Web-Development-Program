@@ -1,0 +1,92 @@
+/*
+Theme Name: mytheme theme  
+Theme URI: https://it-akademija.com/
+Author: Nemanja Karapetrovic
+Author URI: https://it-akademija.com/
+Description: WordPress theme for ITAcademy course.
+Text Domain: redsilverita
+Version: 1.0.0
+License: GNU General Public License v2 or later
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
+    color: #369;
+    font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #123;
+    text-transform: uppercase;
+    margin: 0.4em 0;
+}
+h1 { font-size: 40px;}
+h2 { font-size: 34px;}
+h3 { font-size: 30px;}
+h4 { font-size: 24px;}
+h5 { font-size: 22px;}
+h6 { font-size: 20px;}
+p { margin: 0.4em 0;}
+img {
+    vertical-align: bottom;
+}
+a, a:link, a:visited {
+    color: #330a33;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: red;
+}
+.site-header {
+    background: #abc;
+    padding: 23px;
+    border-bottom: 3px dotted #330a15;
+}
+.site-nav {
+    background: #369;
+}
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav ul li {
+    display: inline-block;
+}
+.site-nav ul li a {
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+}
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+.site-nav ul li a:hover {
+    background: rgba(3,6,9,0.4);
+}
+.site-nav ul li a:active {
+    color: #AAA;
+    background: rgba(3,6,9,0.6);
+}
+.central {
+    padding: 36px 16px;
+}
+.site-footer {
+    background: red;
+    color: yellow;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+    border-top: 3px dashed green;
+}
+
+.container{
+	margin: 0 auto;
+	width: 1300px;
+}

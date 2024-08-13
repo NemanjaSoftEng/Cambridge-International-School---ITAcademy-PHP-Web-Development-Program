@@ -1,0 +1,41 @@
+<p>Angular - phonebook</p>
+<fieldset>
+    <legend>Personal info</legend>
+        <form>
+            <label>Name*: </label><br>
+            <input type="text" placeholder="Enter name" [(ngModel)]="userInput" [ngModelOptions]="{standalone: true}">
+            <br><br>
+            <label>Phone number*: </label><br>
+            <input type="text" placeholder="Enter phone number" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}">
+            <br><br>
+            <button (click)="addData()">Add</button>
+            <br><br>
+            <button (click)="retrieveFromLocalStorage()">Remove last</button>
+            <br><br>
+            <button (click)="clearLocalStorage()">Remove all</button>
+            <p style="font-size: 18px;background: yellow;">*Fields are required.</p>
+        </form>
+</fieldset>
+
+<br>
+<br>
+<br>
+
+<p>Phonebook</p>
+
+<br>
+<br>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center;border:1px solid black;background-color: aqua;">Order number</th>
+      <th style="text-align: center;border:1px solid black;background-color: aqua;">Name and phone</th>
+    </tr>
+      <tr *ngFor="let item of dataList; index as i">
+        <td style="text-align: center;border:1px solid black;background-color: yellow;">{{ i + 1 }}.</td>
+        <td style="text-align: center;border:1px solid black;background-color: yellow;">{{ item }}</td>
+      </tr>
+  </tbody>
+</table>

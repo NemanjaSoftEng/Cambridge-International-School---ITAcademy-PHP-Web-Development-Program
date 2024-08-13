@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4 Objects</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<h1>4 Objects</h1>
+
+<script>
+//1
+var posX=0;
+var time=0;
+
+function mainLoop(){
+time++;
+frameRender();
+setTimeout("mainLoop()",10);
+}
+
+function frameRender(){
+result.style.left=++posX+"px";
+
+}
+
+var result = document.createElement("div");
+result.id='r';
+result.style.width="50px";
+result.style.height="50px";
+result.style.position="absolute";
+result.style.border="1px black solid";
+document.body.appendChild(result);
+result.addEventListener("click",()=>{
+
+$("#r").css("width","100px");
+$("#r").css("height","100px");
+
+})
+mainLoop();
+
+document.write("<br><br><br><br><br><br><br><br>");
+
+//2
+
+function mainLoop2(){
+time++;
+frameRender2();
+setTimeout("mainLoop2()",10);
+}
+
+function frameRender2(){
+result2.style.left=++posX+"px";
+}
+
+var result2 = document.createElement("div");
+result2.id='r2';
+result2.style.width="20px";
+result2.style.height="20px";
+result2.style.position="absolute";
+result2.style.border="1px black solid";
+document.body.appendChild(result2);
+mainLoop2();
+document.write("<br><br><br>");
+
+//3
+
+
+function mainLoop3(){
+time++;
+frameRender3();
+setTimeout("mainLoop3()",10);
+}
+
+function frameRender3(){
+result3.style.left=++posX+"px";
+}
+
+var result3 = document.createElement("div");
+result3.id='r3';
+result3.style.width="50px";
+result3.style.height="50px";
+result3.style.position="absolute";
+result3.style.border="1px black solid";
+document.body.appendChild(result3);
+
+result3.addEventListener('mouseenter',()=>{
+
+$("#r3").css("background-color","red");
+
+})
+
+result3.addEventListener('mouseleave',()=>{
+
+$("#r3").css("background-color","white");
+
+})
+
+mainLoop3();
+
+document.write("<br><br><br><br>");
+
+//4
+
+
+
+function mainLoop4(){
+time++;
+frameRender4();
+setTimeout("mainLoop4()",10);
+}
+
+function frameRender4(){
+result4.style.left=++posX+"px";
+}
+
+var result4 = document.createElement("div");
+result4.id='r4';
+result4.style.width="20px";
+result4.style.height="20px";
+result4.style.position="absolute";
+result4.style.border="1px black solid";
+document.body.appendChild(result4);
+mainLoop4();
+
+
+            
+</script>
+
+</body>
+</html>

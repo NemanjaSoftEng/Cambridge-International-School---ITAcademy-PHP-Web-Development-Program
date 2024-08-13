@@ -1,0 +1,116 @@
+*{
+    background-color: rgb(118, 181, 243);
+    margin: 0;
+    padding: 0;
+
+}
+
+#earth{
+    /*width:480px;height:480px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 480px;
+}
+
+h1,h2{
+    text-align:center;
+    text-transform: uppercase;
+
+}
+nav{
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;/*Ovo i */
+}
+
+a,ul,li{
+    background-color: yellow;
+    font-size: 23px;
+    text-decoration: none;/*da ne bude podvuceno*/
+
+}
+a{
+    padding: 20px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    text-align: left;/*ovo pozicioniraju listu na sredinu.*/
+    
+}
+a,ul,li:hover{
+    color: #4f33f1 !important;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+p{
+    font-size: 18px;
+    font-weight:bold;
+    border: solid 3px red;
+    background-color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Forma css*/
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+input:hover{
+    border: blue 1px solid;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(69, 240, 17);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+button:hover{
+    border: blue 2px solid;
+
+}
+
+fieldset,label{
+    background-color: #fa8e02;
+}
+
+fieldset{
+    border: solid 5px black;
+    padding: 20px; 
+    width: 300px;
+    display: block;
+    margin:auto;
+    
+    
+}
+
+legend{
+    text-transform: uppercase;
+    font-weight: bold;
+    border: solid 5px black;
+    background-color: yellow;
+}
+
+label{
+    font-weight: bold;
+}
+

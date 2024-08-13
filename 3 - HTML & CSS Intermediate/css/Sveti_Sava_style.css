@@ -1,0 +1,45 @@
+*{
+    background-color: rgb(0, 126, 252);
+    /*Komentar*/
+    }
+    
+    h1,h2{
+        color: hsl(0, 100%, 50%);
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px #fffb00;/*Complementar to background-color*/
+    }
+    
+    #citat{
+        border: dashed red 9px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 10px 10px 10px 10px;
+        background-color: yellow;
+        overflow-wrap: break-word;
+        
+    }
+    
+    .beseda{
+        column-count: 3;
+        column-rule-style: solid;
+        column-rule-color: red;
+        column-gap: 33px;
+        text-align: justify;
+        text-indent: 10em;
+
+
+    }
+    
+    .nav-linkovi{
+        color: #fffb00;
+        display: inline-block;
+        background: radial-gradient(circle, rgba(128,255,128,1) 0%, rgba(6,110,58,1) 100%);
+        text-transform: capitalize;
+        text-align:center;
+        font-size: 21px;
+        color:black;
+        margin: 30px;
+        padding: 10px;  
+        
+    }
